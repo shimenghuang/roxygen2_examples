@@ -1,7 +1,7 @@
 # Notes:
 # 1. before template, there must be explicit `@description` or `@details`
-# 2. the template seems to be copied into the roxygen documentation 
-#   chunk after the `templateVar` are passed in and evaluated
+# 2. it seems that the template with `brew` syntax is evaluated then 
+#   directly copied into the roxygen documentation chunk
 
 #' A fixed parameter with additional text.
 #' 

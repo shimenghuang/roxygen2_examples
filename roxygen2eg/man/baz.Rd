@@ -2,7 +2,7 @@
 % Please edit documentation in R/templateVar_examples.R
 \name{baz}
 \alias{baz}
-\title{Parameters whose descriptions are of the same structure.}
+\title{Multiple templates.}
 \usage{
 baz(x, xx, yy)
 }
@@ -14,6 +14,5 @@ baz(x, xx, yy)
 \item{yy}{A vector of type character}
 }
 \description{
-The function takes multiple parameters but all the descriptions
-follow the same pattern.
+The function documentation uses more than one template.
 }
