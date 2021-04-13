@@ -2,6 +2,8 @@
 # 1. before template, there must be explicit `@description` or `@details`
 # 2. it seems that the template with `brew` syntax is evaluated then 
 #   directly copied into the roxygen documentation chunk
+# 3. one cannot add additional text after `@template some_template` as the 
+#   parser takes the additional text as continuation of the template's name.
 
 #' A fixed parameter with additional text.
 #' 
