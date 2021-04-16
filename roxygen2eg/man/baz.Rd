@@ -4,15 +4,17 @@
 \alias{baz}
 \title{Multiple templates.}
 \usage{
-baz(x, xx, yy)
+baz(x, y)
 }
 \arguments{
-\item{x}{This is a common variable.\cr Some specific comments of this parameter.}
+\item{x}{A common variable called \code{x}, but some more descriptions depend on the function.\cr Some specific comments of y in \code{baz}.}
 
-\item{xx}{A vector of type numeric}
-
-\item{yy}{A vector of type character}
+\item{y}{A common variable called \code{y}, but some more descriptions depend on the function.\cr Some specific comments of y in \code{baz}.}
 }
 \description{
-The function documentation uses more than one template.
+The function documentation uses more than one template that
+takes an argument and the arguments are even of the same name.
+}
+\author{
+Shimeng Huang (\email{shimeng.huang@roche.com})
 }

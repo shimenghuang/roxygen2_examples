@@ -4,7 +4,7 @@
 \alias{bar}
 \title{Parameters whose descriptions are of the same structure.}
 \usage{
-bar(xx, yy, zz)
+bar(xx, yy, zz, common_var1, common_var2)
 }
 \arguments{
 \item{xx}{A vector of type numeric}
@@ -12,8 +12,15 @@ bar(xx, yy, zz)
 \item{yy}{A vector of type character}
 
 \item{zz}{A vector of type logical}
+
+\item{common_var1}{A common variable which always comes with another variable.}
+
+\item{common_var2}{A common variable which always comes with another variable.}
 }
 \description{
 The function takes multiple parameters but all the descriptions
 follow the same pattern.
+}
+\author{
+Shimeng Huang (\email{shimeng.huang@roche.com})
 }

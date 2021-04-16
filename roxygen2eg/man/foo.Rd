@@ -4,14 +4,19 @@
 \alias{foo}
 \title{A fixed parameter with additional text.}
 \usage{
-foo(x, another_var)
+foo(x, common_var1, common_var2)
 }
 \arguments{
-\item{x}{This is a common variable.\cr Some specific comments of this parameter.}
+\item{x}{A common variable called \code{x}, but some more descriptions depend on the function.\cr Some specific comments of this parameter.}
 
-\item{another_var}{Some other variable.}
+\item{common_var1}{A common variable which always comes with another variable.}
+
+\item{common_var2}{A common variable which always comes with another variable.}
 }
 \description{
 \code{x} is a common parameter for many functions, but it requires
 additional text to be added after the common description.
+}
+\author{
+Shimeng Huang (\email{shimeng.huang@roche.com})
 }

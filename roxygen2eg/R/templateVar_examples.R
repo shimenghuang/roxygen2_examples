@@ -4,6 +4,8 @@
 #   directly copied into the roxygen documentation chunk
 # 3. one cannot add additional text after `@template some_template` as the 
 #   parser takes the additional text as continuation of the template's name.
+# 4. multiple templates can be used in one function's documentation, even the 
+#   templates all take arguments which may have the same names.
 
 #' A fixed parameter with additional text.
 #' 
@@ -13,8 +15,10 @@
 #' @templateVar add_text Some specific comments of this parameter.
 #' @template arg-x_with_text
 #' 
-#' @param another_var Some other variable.
-foo <- function(x, another_var) {
+#' @template arg-common_var
+#' 
+#' @template aut-huangs69
+foo <- function(x, common_var1, common_var2) {
   return("foo!")
 }
 
@@ -26,20 +30,26 @@ foo <- function(x, another_var) {
 #' @templateVar param_names c('xx', 'yy', 'zz')
 #' @templateVar param_types c('numeric', 'character', 'logical')
 #' @template arg-vectors_and_types
-bar <- function(xx, yy, zz) {
+#' 
+#' @template arg-common_var
+#' 
+#' @template aut-huangs69
+bar <- function(xx, yy, zz, common_var1, common_var2) {
   return("bar!")
 }
 
 #' Multiple templates.
 #' 
-#' @description The function documentation uses more than one template.
+#' @description The function documentation uses more than one template that 
+#'  takes an argument and the arguments are even of the same name.
 #'   
-#' @templateVar add_text Some specific comments of this parameter.
+#' @templateVar add_text Some specific comments of x in `baz`.
 #' @template arg-x_with_text
 #' 
-#' @templateVar param_names c('xx', 'yy')
-#' @templateVar param_types c('numeric', 'character')
-#' @template arg-vectors_and_types
-baz <- function(x, xx, yy) {
+#' @templateVar add_text Some specific comments of y in `baz`.
+#' @template arg-y_with_text
+#' 
+#' @template aut-huangs69
+baz <- function(x, y) {
   return("baz!")
 }

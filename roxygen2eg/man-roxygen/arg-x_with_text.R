@@ -1,1 +1,1 @@
-<% cat(paste("#' @param x This is a common variable.\\cr", add_text)) %>
+<% cat(paste("#' @param x A common variable called `x`, but some more descriptions depend on the function.\\cr", add_text)) %>
